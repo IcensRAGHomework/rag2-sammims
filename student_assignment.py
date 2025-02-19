@@ -3,7 +3,8 @@ from langchain_text_splitters import (CharacterTextSplitter,
                                       RecursiveCharacterTextSplitter)
 
 q1_pdf = "OpenSourceLicenses.pdf"
-q2_pdf = "勞動基準法.pdf"
+# q2_pdf = "勞動基準法.pdf"
+q2_pdf = "道路交通管理處罰條例.pdf"
 
 
 def hw02_1(q1_pdf):
@@ -56,6 +57,7 @@ def hw02_2(q2_pdCf):
         chapter_article_chunks.extend(articles)
 
     print(f"result chunk count: {len(chapter_article_chunks)}")
+    return len(chapter_article_chunks)
 
 
 hw02_1(q1_pdf)
